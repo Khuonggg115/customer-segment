@@ -60,7 +60,7 @@ Xây dựng báo cáo 3 trang tương tác: Tổng quan, Phân tích hành vi th
 - **Potential là nhóm đông nhất (41.6%) nhưng đóng góp doanh thu thấp (11.7%)** → tiềm năng lớn cho chiến dịch upsell/cross-sell để chuyển hóa thành Champions.
 - **Churned chiếm gần 1/3 tổng khách hàng** → nên triển khai chiến dịch win-back (email nhắc lại, ưu đãi tái kích hoạt) thay vì chỉ tập trung thu hút khách mới.
 - UK là thị trường áp đảo về doanh thu; EIRE, Netherlands, Germany là các thị trường quốc tế tiềm năng tiếp theo.
-   ![Dashboard Product/Revenue](Product_Revenue.png)
+   ![Dashboard Product/Revenue](Product,Revenue.png)
 ## 6. Công cụ sử dụng
 
 - **Python**: Pandas, NumPy, Scikit-learn (StandardScaler, KMeans)
