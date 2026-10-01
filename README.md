@@ -46,7 +46,7 @@ Nạp dữ liệu đã làm sạch vào SQLite, viết các truy vấn phân tí
 Xây dựng báo cáo 3 trang tương tác: Tổng quan, Phân tích hành vi theo phân khúc, Xu hướng doanh thu & sản phẩm.
 
 ## 4. Kết quả phân khúc
-
+   ![Dashboard Overview](overview.png)
 | Phân khúc | % Khách hàng | % Doanh thu | Đặc điểm |
 |---|---|---|---|
 | **VIP** | 10.7% | 65.2% | Mua rất thường xuyên, chi tiêu vượt trội (outlier tách riêng bằng IQR) |
@@ -55,12 +55,12 @@ Xây dựng báo cáo 3 trang tương tác: Tổng quan, Phân tích hành vi th
 | **Churned** | 31.1% | 5.5% | Không quay lại mua hàng đã lâu (trung bình ~495 ngày) |
 
 ## 5. Insight & đề xuất kinh doanh
-
+   ![Dashboard Segment Analysis](SegmentAnalysis.png)
 - **VIP chỉ chiếm 10.7% khách hàng nhưng đóng góp 65.2% doanh thu** → cần chương trình chăm sóc/loyalty riêng để giữ chân nhóm này, vì rủi ro mất 1 khách VIP ảnh hưởng doanh thu rất lớn.
 - **Potential là nhóm đông nhất (41.6%) nhưng đóng góp doanh thu thấp (11.7%)** → tiềm năng lớn cho chiến dịch upsell/cross-sell để chuyển hóa thành Champions.
 - **Churned chiếm gần 1/3 tổng khách hàng** → nên triển khai chiến dịch win-back (email nhắc lại, ưu đãi tái kích hoạt) thay vì chỉ tập trung thu hút khách mới.
 - UK là thị trường áp đảo về doanh thu; EIRE, Netherlands, Germany là các thị trường quốc tế tiềm năng tiếp theo.
-
+   ![Dashboard Product/Revenue](Product_Revenue.png)
 ## 6. Công cụ sử dụng
 
 - **Python**: Pandas, NumPy, Scikit-learn (StandardScaler, KMeans)
@@ -70,10 +70,10 @@ Xây dựng báo cáo 3 trang tương tác: Tổng quan, Phân tích hành vi th
 ## 7. Cấu trúc project
 
 ```
-├── data_cleaning_rfm_kmeans.ipynb   # Notebook làm sạch dữ liệu + tính RFM + K-means (chạy trên Kaggle)
+├── customer_segment.ipynb   # Notebook làm sạch dữ liệu + tính RFM + K-means (chạy trên Kaggle)
 ├── data_final.csv                   # Dữ liệu giao dịch đã làm sạch
 ├── rfm_final.csv                    # Bảng khách hàng đã phân khúc
-├── dashboard.pbix                    # File Power BI dashboard
+├── customer_segment.pbix                    # File Power BI dashboard
 └── README.md
 ```
 
